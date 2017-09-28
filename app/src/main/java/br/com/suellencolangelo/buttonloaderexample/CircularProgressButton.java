@@ -6,6 +6,7 @@ import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.content.Context;
+import android.graphics.Canvas;
 import android.graphics.drawable.GradientDrawable;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.AppCompatButton;
@@ -48,6 +49,7 @@ public class CircularProgressButton extends AppCompatButton {
         mGradientDrawable = (GradientDrawable) ContextCompat.getDrawable(context, R.drawable.button_shape);
         setBackground(mGradientDrawable);
     }
+
 
     public void startAnimation() {
         if (mState != State.IDLE) {
@@ -119,9 +121,6 @@ public class CircularProgressButton extends AppCompatButton {
             }
         });
         mMorphingAnimatorSet.start();
-
-
-
     }
 
     private ValueAnimator getWidthAnimator(Integer initialWidth, Integer finalWidth) {
@@ -160,7 +159,6 @@ public class CircularProgressButton extends AppCompatButton {
                 finalCornerRadius);
 
     }
-
 
     public State getState() {
         return mState;

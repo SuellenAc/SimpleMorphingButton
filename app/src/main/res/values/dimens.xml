@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="circular_button_internal_padding">16dp</dimen>
+    <dimen name="swipe_button_text_view_internal_padding">20dp</dimen>
+
+</resources>
