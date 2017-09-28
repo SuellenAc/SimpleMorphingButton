@@ -18,6 +18,7 @@ import android.widget.TextView;
 
 /**
  * Created by suellencolangelo on 28/09/17.
+ * Example From - https://android.jlelse.eu/make-a-great-android-ux-how-to-make-a-swipe-button-eefbf060326d
  */
 
 public class SwipeButton extends RelativeLayout {
